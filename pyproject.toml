@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "healthy-docker"
+version = "0.1.0"
+description = ""
+authors = ["Dylann Batisse <dylannbatisse@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "healthy_docker"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+docker = "^7.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
